@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LogIn</title>
+	<link href='//fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+	<link href='//fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+	
+	<style>
+		.OuterBox
+		{
+			margin-left: 33%;
+			margin-right: 33%;
+			margin-top: 10%;
+			background-color:#1abc9c;
+			border-style: solid;
+			height: 450px;
+			border-radius: 15px;
+			box-shadow: 20px 20px 20px black;
+			
+		}
+		.header
+		{
+			background-color: #191919;
+			border-radius: 12px 12px 0px 0px;
+			height: 55px;
+			color: white;
+			text-align: center;
+			padding-top: 28px;
+			font-size: 25px;
+			color: #e74c3c;
+			font-family: 'Courgette';
+		}
+		.field
+		{
+			margin-left: 8%;
+			margin-top: 12%;
+			font-size:18px;
+			color: white;
+		}
+		input
+		{
+			border-color: red;
+			border-radius: 15px;
+			width: 70%;
+			height: 40px;
+			font-size: 22px;
+			margin-left:2%;
+		}
+		button
+		{
+			margin-top: 8%;
+			margin-left: 40%;
+			height: 50px;
+			width: 20%;
+			border-radius: 10px;
+			background-color: #e74c3c;
+			font-family:'Pacifico';
+			font-size: 18px;
+			color: white;
+		}
+		#page
+		{
+			background-image: url("img/bg.jpg");
+			width: 100%;
+			height: 700px;
+			opacity: 0.8;
+			z-index: -1;
+			left: 0px;
+			top: 0px;
+			position: absolute;
+		}
+
+
+	</style>
+</head>
+<body>
+
+
+		<div id="page">
+			
+		</div>
+		<div class="OuterBox">
+			<div class="header">
+				LogIn
+			</div>
+			<div class="field">
+				<p><span style=" font-family: 'Pacifico'; ">Username :</span>
+				<input type="text" name="username" id="username"  required 	></p><br>
+				<p><span style=" font-family: 'Pacifico'; ">Password :</span>
+				<input type="password" name="password" id="password"  required></p>
+				<button id="link"><a id="GoAhead">Submit</a></button>
+			</div>
+
+		</div>
+
+		
+		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="js/login.js"></script>
+		
+
+</body>
+</html>
